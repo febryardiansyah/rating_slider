@@ -6,7 +6,7 @@
 A highly customizable Flutter rating bar that supports drag and tap interactions, half ratings, and dynamic icons.
 
 <div align="center">
-    <img src="https://raw.githubusercontent.com/febryardiansyah/rating_slider/refs/heads/master/asset/demo.gif" alt="Rating Slider Demo" width="250" />
+    <img src="https://raw.githubusercontent.com/febryardiansyah/rating_slider/refs/heads/master/assets/demo.gif" alt="Rating Slider Demo" width="250" />
 </div>
 
 ## Usage
