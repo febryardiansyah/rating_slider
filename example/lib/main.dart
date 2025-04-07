@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: const Text("RatingSlider Example")),
         body: const SingleChildScrollView(
-          padding: EdgeInsets.symmetric(horizontal: 20),
+          padding: EdgeInsets.symmetric(horizontal: 20,vertical: 40),
           child: RatingInput(),
         ),
       ),

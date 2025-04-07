@@ -1,9 +1,12 @@
 # RatingSlider
 
+[![Pub](https://img.shields.io/pub/v/flutter_rating_bar.svg)](https://pub.dartlang.org/packages/rating_slider) 
+[![License](https://img.shields.io/badge/licence-MIT-orange.svg)](https://github.com/febryardiansyah/rating_slider/blob/master/LICENSE)
+
 A highly customizable Flutter rating bar that supports drag and tap interactions, half ratings, and dynamic icons.
 
 <div align="center">
-    <img src="https://raw.githubusercontent.com/febryardiansyah/rating_slider/refs/heads/master/asset/demo.gif" alt="Frosted Toast Demo" width="250" />
+    <img src="https://raw.githubusercontent.com/febryardiansyah/rating_slider/refs/heads/master/asset/demo.gif" alt="Rating Slider Demo" width="250" />
 </div>
 
 ## Usage
