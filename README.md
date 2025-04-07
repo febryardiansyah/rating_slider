@@ -1,39 +1,35 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# RatingSlider
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+A highly customizable Flutter rating bar that supports drag and tap interactions, half ratings, and dynamic icons.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+<div align="center">
+    <img src="https://raw.githubusercontent.com/febryardiansyah/rating_slider/refs/heads/master/asset/demo.gif" alt="Frosted Toast Demo" width="250" />
+</div>
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
 ```dart
-const like = 'sample';
+RatingSlider(
+  initialRating: _rating,
+  iconBuilder: (context, index, type) {
+  switch (type) {
+    case RatingType.full:
+    return const Icon(Icons.star, color: Colors.amber);
+    case RatingType.half:
+    return const Icon(Icons.star_half, color: Colors.amber);
+    case RatingType.empty:
+    default:
+    return const Icon(Icons.star_border, color: Colors.grey);
+    }
+  },
+  onRatingUpdate: (rating) {
+    debugPrint("Rating: $rating");
+    setState(() {
+    _controller.text = rating.toStringAsFixed(1);
+    _rating = rating;
+    });
+  },
+),
 ```
 
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+For more examples, check the `/example` folder in the repository.
